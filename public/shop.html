@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Webpage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-600">My Shop</h1>
+      <ul class="flex space-x-6 text-gray-700">
+        <li class="relative group">
+          <button class="hover:text-blue-600">Electronics</button>
+          <ul class="absolute left-0 bg-white shadow-md rounded-lg p-4 hidden group-hover:block space-y-2">
+            <li><a href="#" class="hover:text-blue-600">Phones</a></li>
+            <li><a href="#" class="hover:text-blue-600">Laptops</a></li>
+            <li><a href="#" class="hover:text-blue-600">Gaming</a></li>
+          </ul>
+        </li>
+        <li class="relative group">
+          <button class="hover:text-blue-600">Clothing</button>
+          <ul class="absolute left-0 bg-white shadow-md rounded-lg p-4 hidden group-hover:block space-y-2">
+            <li><a href="#" class="hover:text-blue-600">Men's Wear</a></li>
+            <li><a href="#" class="hover:text-blue-600">Women's Wear</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="hover:text-blue-600">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-96 flex items-center justify-center" style="background-image: url('project-images/banner.jpg');">
+    <div class="text-center bg-black bg-opacity-50 text-white p-8 rounded-lg">
+      <h2 class="text-4xl font-bold mb-4">Discover Amazing Deals</h2>
+      <p class="mb-6">Shop the best products at unbeatable prices.</p>
+      <a href="#shop-container" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-lg">Start Shopping</a>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <main id="shop-container" class="max-w-7xl mx-auto px-4 py-8">
+    <h3 class="text-3xl font-bold mb-6 text-center">Our Products</h3>
+    <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Dynamic Products will be added here -->
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
