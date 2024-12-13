@@ -6,7 +6,7 @@
 
 using namespace std;
 
-// Product Class
+
 class Product {
 private:
     int id;
@@ -29,7 +29,7 @@ public:
     }
 };
 
-// Cart Item Class
+
 class CartItem {
 private:
     Product product;
@@ -52,7 +52,7 @@ public:
     }
 };
 
-// Cart Class
+
 class Cart {
 public:
     vector<CartItem> items;
@@ -96,7 +96,6 @@ public:
     }
 };
 
-// Utility Functions
 void displayProducts(const vector<Product>& products) {
     cout << setw(5) << "ID" << setw(20) << "Name" << setw(30) << "Description"
          << setw(10) << "Price" << endl;
@@ -127,7 +126,7 @@ void saveOrderToFile(const Cart& cart) {
     cout << "Order saved to 'order_summary.txt'." << endl;
 }
 
-// Main Function
+
 int main() {
     vector<Product> products = {
         Product(1, "Laptop", "High-performance laptop", 70000),
